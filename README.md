@@ -3,6 +3,9 @@ Following this [Medium tutorial](https://medium.com/@mortenhegewald/marketing-ch
 
 **NOTE:** Docker files is copied from this [repository](https://github.com/jeffheaton/docker-jupyter-python-r) and code taken directly from the tutorial with few modifications/fixes.
 
+## Motivation
+It was not easy to execute the code also some followers got issues running the code.
+
 ## Clone and build docker image
 
 ```bash
@@ -17,3 +20,14 @@ $ docker run -it --rm -p 8888:8888 mca
 ```
 
 Then open http://localhost:8888 and use provided token.
+
+
+## Notebook and output
+### Tutorial files
+![tutorial](pics/included.png)
+
+### Plot
+![plot](pics/plot.png)
+
+### Heatmap
+![heatmap](pics/heatmap.png)
