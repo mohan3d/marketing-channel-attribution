@@ -50,6 +50,11 @@ COPY packages.r /root/packages.r
 RUN ln -s /bin/tar /bin/gtar
 RUN Rscript /root/packages.r
 
+# Copy tutorial files
+COPY ["Attribution with Markov Chains.ipynb", "/root/tutorial/Attribution with Markov Chains.ipynb"]
+COPY ./Markov.r /root/tutorial/Markov.r
+COPY ./Channel_attribution.csv /root/tutorial/Channel_attribution.csv
+
 WORKDIR /root/
 
 EXPOSE 8888
